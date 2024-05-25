@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background: #f8f9fa;
+    --color-button: #dc3545;
+    --color-button-send: #4035dc;
+    --color-text: #343a40;
+    --font-text: "Reddit Mono", monospace;
+}
+
+h1{
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+
+#message{
+    position: absolute;
+    padding: 5vh 2vw;
+    border-radius: 6px;
+    right: 0;
+    bottom: 0;
+    margin: 2vh;
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#div-input{
+    margin-top: 2vh;
+    background-color: var(--color-background);
+    padding: 10vh 15vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+    gap: 3vh;
+}
+
+input{
+    width: 250px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: var(--color-text);
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder{
+    font-family: var(--font-text);
+}
+
+.send{
+    background-color: var(--color-button-send);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    color: #f8f9fa;
+    font-family: var(--font-text);
+    font-size: 1.12rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.send:hover{
+    background-color: #7066fd;
+}
+
+.clear{
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    color: #f8f9fa;
+    font-family: var(--font-text);
+    font-size: 1.12rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.clear:hover{
+    background-color: #f83a4d;
+}
+
+#gallery{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 45vh;
+    width: 50vw;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+img:hover{
+    transform: scale(1.125);
+}
+
+#div-button-control{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
+
+.button-page{
+    background-color: var(--color-button-send);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    color: #f8f9fa;
+    font-family: var(--font-text);
+    font-size: 1.12rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.button-page:hover{
+    background-color: #7066fd;
+}
+
+.disabled{
+    background-color: #7066fd;
+    cursor: not-allowed;
+}
+
+.disabled-red{
+    background-color: #f83a4d;
+    cursor: not-allowed;
+}
+
+#div-modal{
+    width: 100vw;
+    height: 100%;
+    background-color: #343a4081;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    background-color: var(--color-background);
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: default;
+}
+
+.image-modal:hover{
+    transform: none;
+}

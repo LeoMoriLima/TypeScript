@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-background: #f8f9fa;
+    --color-button: #dc3545;
+    --color-text: #343a40;
+    --font-text: "Reddit Mono", monospace;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#register{
+    display: flex;
+    background-color: var(--color-background);
+    padding: 20vh 10vw;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+}
+
+input{
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: var(--color-text);
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0,0,0,1),
+    -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+label{
+    color: var(--color-text);
+    font-family: var(--font-text);
+}
+
+#name{
+    margin-bottom: 2vh;
+}
+
+#email{
+    margin-bottom: 2vh;
+}
+
+#password{
+    margin-bottom: 3vh;
+}
+
+button{
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    color: #f8f9fa;
+    font-family: var(--font-text);
+    font-size: 1.12rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+button:hover{
+    background-color: #f83a4d;
+}
+
+.wrong:focus{
+    box-shadow: 3px 3px 10px rgba(219, 54, 70,1),
+    -1px -1px 6px rgba(219, 54, 70, 0.4);
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#modal-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #343a4081;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-content-div{
+    position: relative;
+    background-color: var(--color-background);
+    border-radius: 6px;
+    border: none;
+    padding: 10vh 5vw;
+    font-family: var(--font-text);
+    font-size: 1.2rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+#message{
+    position: absolute;
+    padding: 5vh 2vw;
+    border-radius: 6px;
+    right: 0;
+    bottom: 0;
+    margin: 2vh;
+    font-family: var(--font-text);
+    font-size: 1rem;
+}
