@@ -55,7 +55,7 @@ buttonSend.addEventListener("click", async (): Promise<void> => {
         method: "GET",
         headers: {
             "Content-type": "application/json",
-            'x-api-key': 'live_P62b5vGPYMogVR2PwmrdmmMHl71WnOdzpOUcy4fKn94f2cD58EJ9247iW5UySb6R'
+            'x-api-key': 'API_KEY'
         }
     });
     if (!response.ok){
