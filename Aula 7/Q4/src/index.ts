@@ -1,7 +1,4 @@
-import { add } from "./mathFunctions";
-import { substract } from "./mathFunctions";
-import { multiply } from "./mathFunctions";
-import { divide } from "./mathFunctions";
+import { add, substract, multiply, divide } from "./mathFunctions";
 import "./index.css";
 
 const buttonAdd = <HTMLButtonElement>document.querySelector("#button-add");
